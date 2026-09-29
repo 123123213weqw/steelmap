@@ -1,0 +1,422 @@
+0	Australia	Western Australia
+1	Australia	Northern Territory
+2	Australia	Northern Territory
+3	Australia	Northern Territory
+4	Australia	South Australia
+5	Australia	Queensland
+6	Australia	Queensland
+7	Australia	Queensland
+8	Australia	Tasmania
+9	Australia	Tasmania
+10	Australia	Tasmania
+11	Australia	Victoria
+12	Australia	New South Wales
+13	Brazil	Acre
+14	Brazil	Rondônia
+15	Brazil	Roraima
+16	Brazil	Amazonas
+17	Brazil	Pará
+18	Brazil	Pará
+19	Brazil	Pará
+20	Brazil	Pará
+21	Brazil	Mato Grosso do Sul
+22	Brazil	Amapá
+23	Brazil	Mato Grosso
+24	Brazil	Paraná
+25	Brazil	Distrito Federal
+26	Brazil	Goiás
+27	Brazil	Tocantins
+28	Brazil	São Paulo
+29	Brazil	Maranhão
+30	Brazil	Rio de Janeiro
+31	Brazil	Piauí
+32	Brazil	Minas Gerais
+33	Brazil	Espírito Santo
+34	Brazil	Bahia
+35	Brazil	Ceará
+36	Brazil	Sergipe
+37	Brazil	Alagoas
+38	Brazil	Rio Grande do Norte
+39	Brazil	Pernambuco
+40	Brazil	Paraíba
+41	Brazil	Santa Catarina
+42	Canada	Alberta
+43	Canada	British Columbia
+44	Canada	British Columbia
+45	Canada	British Columbia
+46	Canada	British Columbia
+47	Canada	British Columbia
+48	Canada	Manitoba
+49	Canada	New Brunswick
+50	Canada	Newfoundland and Labrador
+51	Canada	Newfoundland and Labrador
+52	Canada	Nova Scotia
+53	Canada	Nova Scotia
+54	Canada	Northwest Territories
+55	Canada	Northwest Territories
+56	Canada	Northwest Territories
+57	Canada	Northwest Territories
+58	Canada	Northwest Territories
+59	Canada	Northwest Territories
+60	Canada	Northwest Territories
+61	Canada	Nunavut
+62	Canada	Nunavut
+63	Canada	Nunavut
+64	Canada	Nunavut
+65	Canada	Nunavut
+66	Canada	Nunavut
+67	Canada	Nunavut
+68	Canada	Nunavut
+69	Canada	Nunavut
+70	Canada	Nunavut
+71	Canada	Nunavut
+72	Canada	Nunavut
+73	Canada	Nunavut
+74	Canada	Nunavut
+75	Canada	Nunavut
+76	Canada	Nunavut
+77	Canada	Nunavut
+78	Canada	Nunavut
+79	Canada	Nunavut
+80	Canada	Nunavut
+81	Canada	Nunavut
+82	Canada	Nunavut
+83	Canada	Nunavut
+84	Canada	Nunavut
+85	Canada	Nunavut
+86	Canada	Nunavut
+87	Canada	Nunavut
+88	Canada	Nunavut
+89	Canada	Nunavut
+90	Canada	Nunavut
+91	Canada	Nunavut
+92	Canada	Nunavut
+93	Canada	Nunavut
+94	Canada	Nunavut
+95	Canada	Nunavut
+96	Canada	Nunavut
+97	Canada	Nunavut
+98	Canada	Nunavut
+99	Canada	Nunavut
+100	Canada	Nunavut
+101	Canada	Nunavut
+102	Canada	Nunavut
+103	Canada	Nunavut
+104	Canada	Nunavut
+105	Canada	Nunavut
+106	Canada	Nunavut
+107	Canada	Nunavut
+108	Canada	Ontario
+109	Canada	Prince Edward Island
+110	Canada	Québec
+111	Canada	Québec
+112	Canada	Québec
+113	United States of America	Alaska
+114	United States of America	Alaska
+115	United States of America	Alaska
+116	United States of America	Alaska
+117	United States of America	Alaska
+118	United States of America	Alaska
+119	United States of America	Alaska
+120	United States of America	Alaska
+121	United States of America	Alaska
+122	United States of America	Alaska
+123	United States of America	Alaska
+124	United States of America	Alaska
+125	United States of America	Alaska
+126	United States of America	Alabama
+127	United States of America	Arkansas
+128	United States of America	Arizona
+129	United States of America	California
+130	United States of America	Colorado
+131	United States of America	Connecticut
+132	United States of America	Florida
+133	United States of America	Georgia
+134	United States of America	Hawaii
+135	United States of America	Hawaii
+136	United States of America	Hawaii
+137	United States of America	Iowa
+138	United States of America	Idaho
+139	United States of America	Illinois
+140	United States of America	Indiana
+141	United States of America	Kentucky
+142	United States of America	Louisiana
+143	United States of America	Massachusetts
+144	United States of America	Maryland
+145	United States of America	Maine
+146	United States of America	Michigan
+147	United States of America	Minnesota
+148	United States of America	Missouri
+149	United States of America	Mississippi
+150	United States of America	Nebraska
+151	United States of America	New Hampshire
+152	United States of America	New Jersey
+153	United States of America	Nevada
+154	United States of America	New York
+155	United States of America	Ohio
+156	United States of America	Oregon
+157	United States of America	Pennsylvania
+158	United States of America	Rhode Island
+159	United States of America	South Carolina
+160	United States of America	South Dakota
+161	United States of America	Tennessee
+162	United States of America	Texas
+163	United States of America	Utah
+164	United States of America	Virginia
+165	United States of America	Washington
+166	United States of America	Wisconsin
+167	United States of America	Wyoming
+168	China	Gansu
+169	China	Qinghai
+170	China	Guangxi
+171	China	Guizhou
+172	China	Chongqing
+173	China	Beijing
+174	China	Fujian
+175	China	Anhui
+176	China	Guangdong
+177	China	Xizang
+178	India	Sikkim
+179	China	Xinjiang
+180	China	Hainan
+181	China	Ningxia
+182	China	Shaanxi
+183	China	Shanxi
+184	China	Hubei
+185	China	Hunan
+186	China	Sichuan
+187	China	Yunnan
+188	China	Hebei
+189	China	Henan
+190	China	Liaoning
+191	China	Shandong
+192	China	Tianjin
+193	China	Jiangxi
+194	China	Jiangsu
+195	China	Shanghai
+196	China	Zhejiang
+197	China	Jilin
+198	China	Inner Mongol
+199	China	Heilongjiang
+200	Indonesia	Aceh
+201	Indonesia	Aceh
+202	Indonesia	Kalimantan Timur
+203	Indonesia	Jawa Barat
+204	Indonesia	Jawa Tengah
+205	Indonesia	Bengkulu
+206	Indonesia	Banten
+207	Indonesia	Kalimantan Barat
+208	Indonesia	Lampung
+209	Indonesia	Sumatera Selatan
+210	Indonesia	Bangka-Belitung
+211	Indonesia	Bangka-Belitung
+212	Indonesia	Bali
+213	Indonesia	Jawa Timur
+214	Indonesia	Jawa Timur
+215	Indonesia	Kalimantan Selatan
+216	Indonesia	Nusa Tenggara Timur
+217	Indonesia	Nusa Tenggara Timur
+218	Indonesia	Nusa Tenggara Timur
+219	Indonesia	Nusa Tenggara Timur
+220	Indonesia	Nusa Tenggara Timur
+221	Indonesia	Sulawesi Selatan
+222	Indonesia	Sulawesi Barat
+223	Indonesia	Kepulauan Riau
+224	Indonesia	Gorontalo
+225	Indonesia	Jambi
+226	Indonesia	Kalimantan Tengah
+227	Indonesia	Papua Barat
+228	Indonesia	Papua Barat
+229	Indonesia	Sumatera Utara
+230	Indonesia	Sumatera Utara
+231	Indonesia	Riau
+232	Indonesia	Riau
+233	Indonesia	Riau
+234	Indonesia	Maluku Utara
+235	Indonesia	Maluku Utara
+236	Indonesia	Maluku Utara
+237	Indonesia	Maluku Utara
+238	Indonesia	Maluku Utara
+239	Indonesia	Sumatera Barat
+240	Indonesia	Sumatera Barat
+241	Indonesia	Yogyakarta
+242	Indonesia	Maluku
+243	Indonesia	Maluku
+244	Indonesia	Maluku
+245	Indonesia	Maluku
+246	Indonesia	Sulawesi Tenggara
+247	Indonesia	Sulawesi Tenggara
+248	Indonesia	Sulawesi Tenggara
+249	Indonesia	Sulawesi Tengah
+250	Indonesia	Papua
+251	Indonesia	Papua
+252	Indonesia	Papua
+253	Indonesia	Papua
+254	India	Telangana
+255	India	Ladakh
+256	India	Delhi
+257	India	Himachal Pradesh
+258	India	Haryana
+259	India	Jammu and Kashmir
+260	India	Andhra Pradesh
+261	India	Kerala
+262	India	Odisha
+263	India	Karnataka
+264	India	Goa
+265	India	Andaman and Nicobar
+266	India	Assam
+267	India	Manipur
+268	India	Nagaland
+269	India	Meghalaya
+270	India	Punjab
+271	India	Rajasthan
+272	India	Uttar Pradesh
+273	India	Uttarakhand
+274	India	Jharkhand
+275	India	West Bengal
+276	India	Bihar
+277	India	Chhattisgarh
+278	India	Madhya Pradesh
+279	India	Tamil Nadu
+280	India	Gujarat
+281	India	Arunachal Pradesh
+282	India	Mizoram
+283	India	Tripura
+284	Russia	Tomsk
+285	Russia	Adygey
+286	Russia	Karachay-Cherkess
+287	Russia	Kabardin-Balkar
+288	Russia	North Ossetia
+289	Russia	Stavropol'
+290	Russia	Chukchi Autonomous Okrug
+291	Russia	Chukchi Autonomous Okrug
+292	Russia	Chukchi Autonomous Okrug
+293	Russia	Chukchi Autonomous Okrug
+294	Russia	Kaliningrad
+295	Russia	Murmansk
+296	Russia	Novgorod
+297	Russia	Pskov
+298	Russia	Leningrad
+299	Russia	City of St. Petersburg
+300	Russia	Bryansk
+301	Russia	Smolensk
+302	Russia	Arkhangel'sk
+303	Russia	Arkhangel'sk
+304	Russia	Arkhangel'sk
+305	Russia	Arkhangel'sk
+306	Russia	Arkhangel'sk
+307	Russia	Arkhangel'sk
+308	Russia	Arkhangel'sk
+309	Russia	Arkhangel'sk
+310	Russia	Arkhangel'sk
+311	Russia	Arkhangel'sk
+312	Russia	Arkhangel'sk
+313	Russia	Arkhangel'sk
+314	Russia	Arkhangel'sk
+315	Russia	Arkhangel'sk
+316	Russia	Arkhangel'sk
+317	Russia	Arkhangel'sk
+318	Russia	Arkhangel'sk
+319	Russia	Ivanovo
+320	Russia	Vologda
+321	Russia	Kostroma
+322	Russia	Nizhegorod
+323	Russia	Tver'
+324	Russia	Yaroslavl'
+325	Russia	Kaluga
+326	Russia	Kursk
+327	Russia	Lipetsk
+328	Russia	Moskovskaya
+329	Russia	Moskva
+330	Russia	Orel
+331	Russia	Rostov
+332	Russia	Tula
+333	Russia	Volgograd
+334	Russia	Belgorod
+335	Russia	Krasnodar
+336	Russia	Mordovia
+337	Russia	Penza
+338	Russia	Ryazan'
+339	Russia	Tambov
+340	Russia	Vladimir
+341	Russia	Voronezh
+342	Russia	Bashkortostan
+343	Russia	Chelyabinsk
+344	Russia	Kurgan
+345	Russia	Nenets
+346	Russia	Nenets
+347	Russia	Nenets
+348	Russia	Yamal-Nenets
+349	Russia	Yamal-Nenets
+350	Russia	Yamal-Nenets
+351	Russia	Yamal-Nenets
+352	Russia	Komi
+353	Russia	Kirov
+354	Russia	Mariy-El
+355	Russia	Sverdlovsk
+356	Russia	Udmurt
+357	Russia	Astrakhan'
+358	Russia	Chuvash
+359	Russia	Kalmyk
+360	Russia	Samara
+361	Russia	Orenburg
+362	Russia	Saratov
+363	Russia	Tatarstan
+364	Russia	Ul'yanovsk
+365	Russia	Khanty-Mansiy
+366	Russia	Omsk
+367	Russia	Tyumen'
+368	Russia	Altay
+369	Russia	Gorno-Altay
+370	Russia	Kemerovo
+371	Russia	Khakass
+372	Russia	Novosibirsk
+373	Russia	Chechnya
+374	Russia	Dagestan
+375	Russia	Irkutsk
+376	Russia	Krasnoyarsk
+377	Russia	Krasnoyarsk
+378	Russia	Krasnoyarsk
+379	Russia	Krasnoyarsk
+380	Russia	Krasnoyarsk
+381	Russia	Krasnoyarsk
+382	Russia	Krasnoyarsk
+383	Russia	Krasnoyarsk
+384	Russia	Krasnoyarsk
+385	Russia	Krasnoyarsk
+386	Russia	Krasnoyarsk
+387	Russia	Krasnoyarsk
+388	Russia	Tuva
+389	Russia	Buryat
+390	Russia	Amur
+391	Russia	Chita
+392	Russia	Primor'ye
+393	Russia	Sakha (Yakutia)
+394	Russia	Sakha (Yakutia)
+395	Russia	Sakha (Yakutia)
+396	Russia	Sakha (Yakutia)
+397	Russia	Sakha (Yakutia)
+398	Russia	Sakha (Yakutia)
+399	Russia	Sakha (Yakutia)
+400	Russia	Yevrey
+401	Russia	Khabarovsk
+402	Russia	Khabarovsk
+403	Russia	Maga Buryatdan
+404	Russia	Sakhalin
+405	Russia	Sakhalin
+406	Russia	Sakhalin
+407	Russia	Sakhalin
+408	Russia	Crimea
+409	Russia	Perm'
+410	Russia	Kamchatka
+411	Russia	Kamchatka
+412	South Africa	Northern Cape
+413	South Africa	Western Cape
+414	South Africa	North West
+415	South Africa	Free State
+416	South Africa	Gauteng
+417	South Africa	Mpumalanga
+418	South Africa	Limpopo
+419	South Africa	KwaZulu-Natal
+420	South Africa	Eastern Cape
+421	India	Maharashtra
