@@ -1,3 +1,4 @@
 SDL    release-3.4.16  (github libsdl-org/SDL)
 imgui  v1.92.9         (github ocornut/imgui)
 xrt    18747e3         (gitee xywhsoft/xrt, sha256 ebd826df...)
+earcut  mapbox/earcut.hpp master-clone  (ISC)

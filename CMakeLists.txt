@@ -75,6 +75,7 @@ target_link_libraries(server gs_core gs_net)
 
 if(STEELMAP_RENDER)
 add_executable(client client/main.cpp client/render.cpp)
+target_include_directories(client PRIVATE vendor/earcut/include)
 target_link_libraries(client gs_core gs_net SDL3::SDL3 imgui)
 else()
 add_executable(client client/main.cpp client/render_stub.cpp)

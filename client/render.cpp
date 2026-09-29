@@ -6,6 +6,7 @@
  * 操作:左键点省=下移动令;右键拖=平移;滚轮=缩放;ESC 退出。
  */
 #include "render.hpp"
+#include <mapbox/earcut.hpp>
 #include "../core/command.hpp"
 #include "../net/protocol.hpp"
 #include <SDL3/SDL.h>
@@ -16,6 +17,7 @@
 #include <imgui_impl_sdl3.h>
 #include <imgui_impl_sdlrenderer3.h>
 #include <math.h>
+#include <utility>
 #include <set>
 #include <vector>
 
@@ -40,8 +42,6 @@ const Color3 PLAYER_COLOR[5] = {
 };
 
 constexpr int CIRCLE_SEGS = 14;
-
-void triangulate(const std::vector<Vec2>& poly, std::vector<int>& idx);
 
 struct MapCache {
 	uint16_t count = 0;
@@ -96,7 +96,17 @@ MapCache buildCache(const GameState& st)
 			rSum += sqrtf(dx * dx + dy * dy);
 		}
 		c.radii[p] = rSum / (float)c.polys[p].size();
-		triangulate(c.polys[p], c.tris[p]);
+		{
+			using P = std::pair<double, double>;
+			std::vector<std::vector<P>> rings(1);
+			rings[0].reserve(c.polys[p].size());
+			for (const Vec2& v : c.polys[p]) {
+				rings[0].emplace_back(v.x, v.y);
+			}
+			std::vector<uint32_t> tri =
+				mapbox::earcut<uint32_t>(rings);
+			c.tris[p].assign(tri.begin(), tri.end());
+		}
 	}
 	/* 共享边去重:相邻省的同一条边界只保留一份。
 	 * 拓扑简化保证两侧坐标完全一致,按毫单位量化做键。 */
@@ -136,80 +146,8 @@ MapCache buildCache(const GameState& st)
 	return c;
 }
 
-/* 耳切三角化:凸凹多边形都正确(国家形状不是凸的!扇形展开会溢出边界) */
-void triangulate(const std::vector<Vec2>& poly, std::vector<int>& idx)
-{
-	const int n = (int)poly.size();
-	if (n < 3) {
-		return;
-	}
-	double area = 0.0;
-	for (int i = 0; i < n; i++) {
-		const Vec2& a = poly[i];
-		const Vec2& b = poly[(i + 1) % n];
-		area += a.x * b.y - b.x * a.y;
-	}
-	const bool ccw = area > 0;
-	std::vector<int> V(n);
-	for (int i = 0; i < n; i++) {
-		V[i] = i;
-	}
-	int guard = 0;
-	while (V.size() > 3 && guard++ < 4 * n) {
-		bool clipped = false;
-		for (size_t i = 0; i < V.size(); i++) {
-			const int a = V[(i + V.size() - 1) % V.size()];
-			const int b = V[i];
-			const int c = V[(i + 1) % V.size()];
-			const Vec2 A = poly[a];
-			const Vec2 B = poly[b];
-			const Vec2 C = poly[c];
-			const double cr = (B.x - A.x) * (C.y - A.y)
-				- (B.y - A.y) * (C.x - A.x);
-			if ((ccw && cr < 0) || (!ccw && cr > 0)) {
-				continue;                  /* 凹角不切;共线(cr==0)
-				                             * 切掉推进,否则死锁 */
-			}
-			bool blocked = false;
-			for (int v : V) {
-				if (v == a || v == b || v == c) {
-					continue;
-				}
-				const Vec2 P = poly[v];
-				const double d1 = (B.x - A.x) * (P.y - A.y)
-					- (B.y - A.y) * (P.x - A.x);
-				const double d2 = (C.x - B.x) * (P.y - B.y)
-					- (C.y - B.y) * (P.x - B.x);
-				const double d3 = (A.x - C.x) * (P.y - C.y)
-					- (A.y - C.y) * (P.x - A.x);
-				const bool allPos = d1 > 0 && d2 > 0 && d3 > 0;
-				const bool allNeg = d1 < 0 && d2 < 0 && d3 < 0;
-				if (allPos || allNeg) {
-					blocked = true;
-					break;
-				}
-			}
-			if (blocked) {
-				continue;
-			}
-			idx.push_back(a);
-			idx.push_back(b);
-			idx.push_back(c);
-			V.erase(V.begin() + (long)i);
-			clipped = true;
-			break;
-		}
-		if (!clipped) {
-			break;
-		}
-	}
-	if (V.size() == 3) {
-		idx.push_back(V[0]);
-		idx.push_back(V[1]);
-		idx.push_back(V[2]);
-	}
-}
-
+/* 三角化由 mapbox/earcut.hpp 承担(vendored,ISC)。
+ * 手写耳切的血泪史(尖刺死锁/放射扇形/实现分叉)见 docs/PITFALLS.md G8。 */
 bool pointInPoly(const std::vector<Vec2>& poly, Vec2 w)
 {
 	bool inside = false;
